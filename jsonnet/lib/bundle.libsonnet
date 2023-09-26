@@ -47,6 +47,8 @@
     '^com\\.apple\\.Terminal$',
     // WezTerm
     '^com\\.github\\.wez\\.wezterm$',
+    // Warp
+    '^dev\\.warp\\.Warp-Stable$',
   ],
 
   // bundle identifiers for web browser applications
