@@ -1,14 +1,17 @@
 # karabiner-windows-mode
+
 Karabiner-Elements complex ruleset to make using macOS friendlier by enabling common keyboard functionality used in Linux and Windows. Now powered by [Jsonnet](https://jsonnet.org), allowing the main files that need to be interacted with (`*.jsonnet` and `*.libsonnet`) to be much shorter and far more readable.
 
 If you'd like to contribute to this project, please check the [Contributing](#Contributing) section.
 
 ## Installation
-Copy and paste the following URL into your browser window and Karabiner-Elements *should* ask to install the file:
 
-    karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/rux616/karabiner-windows-mode/master/json/windows_shortcuts.json
+Copy and paste the following URL into your browser window and Karabiner-Elements _should_ ask to install the file:
+
+    karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/iaminarush/karabiner-windows-mode/master/json/windows_shortcuts.json
 
 ## List of Shortcuts
+
 First, a note about how these shortcuts are named in Karabiner-Elements. They follow the convention
 
     Key (Modifiers, if any) [Special notes, if any]
@@ -18,111 +21,119 @@ so they should be easy(ish) to understand. Contact me if you have improvement su
 There are some applications, such as hypervisors, IDEs, remote desktops, and terminal emulators, that should receive raw inputs and handle them themselves. To that end, almost all shortcuts no longer apply to these applications. As such, the notes will no longer specify that the specific shortcut does not apply to the excepted applications as that is now the default state. Instead, they will note when a shortcut still applies.
 
 Generally Excepted Applications:
-* Hypervisors
-  * Oracle VirtualBox VMs (not the VirtualBox manager application)
-  * Parallels
-  * VMware Fusion
-* IDEs
-  * GNU Emacs (GUI)
-  * JetBrains (All)
-  * Microsoft VSCode
-  * Sublime Text
-* Remote Desktops
-  * Chrome Remote Desktop (app version, not in-browser version)
-  * Citrix XenAppViewer
-  * Microsoft Remote Desktop Connection
-* Terminal Emulators
-  * Alacritty
-  * Hyper
-  * iTerm2
-  * Kitty
-  * Terminal
-  * WezTerm
+
+- Hypervisors
+  - Oracle VirtualBox VMs (not the VirtualBox manager application)
+  - Parallels
+  - VMware Fusion
+- IDEs
+  - GNU Emacs (GUI)
+  - JetBrains (All)
+  - Microsoft VSCode
+  - Sublime Text
+- Remote Desktops
+  - Chrome Remote Desktop (app version, not in-browser version)
+  - Citrix XenAppViewer
+  - Microsoft Remote Desktop Connection
+- Terminal Emulators
+  - Alacritty
+  - Hyper
+  - iTerm2
+  - Kitty
+  - Terminal
+  - WezTerm
 
 ### Navigation Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Insert | Ctrl | C | Command | Use only 1 Ctrl+Insert shortcut. Works in Terminal Emulators. |
-| Insert | Ctrl | C | Command | Use only 1 Ctrl+Insert shortcut. |
-| Insert | Shift | V | Command | Use only 1 Shift+Insert shortcut. Works in Terminal Emulators. |
-| Insert | Shift | V | Command | Use only 1 Shift+Insert shortcut. |
-| Home |  | Left Arrow | Command |  |
-| Home | Ctrl | Up Arrow | Command |  |
-| Home | Shift | Left Arrow | Command+Shift |  |
-| Home | Ctrl+Shift | Up Arrow | Command+Shift |  |
-| End |  | Right Arrow | Command |  |
-| End | Ctrl | Down Arrow | Command |  |
-| End | Shift | Right Arrow | Command+Shift |  |
-| End | Ctrl+Shift | Down Arrow | Command+Shift |  |
-| Left Arrow | Ctrl | Left Arrow | Option |  |
-| Left Arrow | Ctrl+Shift | Left Arrow | Option+Shift |  |
-| Right Arrow | Ctrl | Right Arrow | Option |  |
-| Right Arrow | Ctrl+Shift | Right Arrow | Option+Shift |  |
+
+| Input Key   | Input Modifier(s) | Output Key  | Output Modifier(s) | Notes                                                          |
+| ----------- | ----------------- | ----------- | ------------------ | -------------------------------------------------------------- |
+| Insert      | Ctrl              | C           | Command            | Use only 1 Ctrl+Insert shortcut. Works in Terminal Emulators.  |
+| Insert      | Ctrl              | C           | Command            | Use only 1 Ctrl+Insert shortcut.                               |
+| Insert      | Shift             | V           | Command            | Use only 1 Shift+Insert shortcut. Works in Terminal Emulators. |
+| Insert      | Shift             | V           | Command            | Use only 1 Shift+Insert shortcut.                              |
+| Home        |                   | Left Arrow  | Command            |                                                                |
+| Home        | Ctrl              | Up Arrow    | Command            |                                                                |
+| Home        | Shift             | Left Arrow  | Command+Shift      |                                                                |
+| Home        | Ctrl+Shift        | Up Arrow    | Command+Shift      |                                                                |
+| End         |                   | Right Arrow | Command            |                                                                |
+| End         | Ctrl              | Down Arrow  | Command            |                                                                |
+| End         | Shift             | Right Arrow | Command+Shift      |                                                                |
+| End         | Ctrl+Shift        | Down Arrow  | Command+Shift      |                                                                |
+| Left Arrow  | Ctrl              | Left Arrow  | Option             |                                                                |
+| Left Arrow  | Ctrl+Shift        | Left Arrow  | Option+Shift       |                                                                |
+| Right Arrow | Ctrl              | Right Arrow | Option             |                                                                |
+| Right Arrow | Ctrl+Shift        | Right Arrow | Option+Shift       |                                                                |
 
 ### Command Keys
+
 | Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Backspace | Ctrl | Backspace | Option |  |
-| Delete | Ctrl | Delete | Option |  |
-| Enter | Ctrl | Enter | Command |  |
-| Enter | Ctrl+Shift | Enter | Command+Shift |  |
+| --------- | ----------------- | ---------- | ------------------ | ----- |
+| Backspace | Ctrl              | Backspace  | Option             |       |
+| Delete    | Ctrl              | Delete     | Option             |       |
+| Enter     | Ctrl              | Enter      | Command            |       |
+| Enter     | Ctrl+Shift        | Enter      | Command+Shift      |       |
 
 ### Modifier Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| Win |  | Spotlight |  | Works in Excepted Applications. |
+
+| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes                           |
+| --------- | ----------------- | ---------- | ------------------ | ------------------------------- |
+| Win       |                   | Spotlight  |                    | Works in Excepted Applications. |
 
 ### Alphanumeric Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| A | Ctrl | A | Command |  |
-| B | Ctrl | B | Command |  |
-| C | Left Ctrl | C | Command |  |
-| C | Ctrl+Shift | C | Command | Only applies to Terminal Emulators. |
-| F | Ctrl | F | Command |  |
-| I | Ctrl | I | Command |  |
-| L | Win | (Shell Command) |  | Use only 1 Win+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications. |
-| L | Win | Power | Control+Shift | Use only 1 Win+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications. |
-| L | Alt+Ctrl | (Shell Command) |  | Use only 1 Alt+Ctrl+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications. |
-| L | Alt+Ctrl | Power | Control+Shift | Use only 1 Alt+Ctrl+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications. |
-| N | Ctrl | N | Command |  |
-| O | Ctrl | O | Command |  |
-| P | Ctrl | P | Command |  |
-| R | Ctrl | R | Command |  |
-| S | Ctrl | S | Command |  |
-| T | Ctrl | T | Command |  |
-| U | Ctrl | U | Command |  |
-| V | Ctrl | V | Command |  |
-| V | Ctrl+Shift | V | Command | Only applies to Terminal Emulators. |
-| W | Ctrl | W | Command |  |
-| X | Ctrl | X | Command |  |
-| Y | Ctrl | Y | Command |  |
-| Z | Ctrl | Z | Command |  |
-| 1 | Command | (Shell Command) | | Launches or switches to Finder (pinned to first position in dock by system). |
-| 2 | Command | (Shell Command) | | Launches or switches to the app pinned to the second position in the dock. |
-| 3 | Command | (Shell Command) | | Launches or switches to the app pinned to the third position in the dock. |
-| 4 | Command | (Shell Command) | | Launches or switches to the app pinned to the fourth position in the dock. |
-| 5 | Command | (Shell Command) | | Launches or switches to the app pinned to the fifth position in the dock. |
-| 6 | Command | (Shell Command) | | Launches or switches to the app pinned to the sixth position in the dock. |
-| 7 | Command | (Shell Command) | | Launches or switches to the app pinned to the seventh position in the dock. |
-| 8 | Command | (Shell Command) | | Launches or switches to the app pinned to the eighth position in the dock. |
-| 9 | Command | (Shell Command) | | Launches or switches to the app pinned to the ninth position in the dock. |
+
+| Input Key | Input Modifier(s) | Output Key      | Output Modifier(s) | Notes                                                                                                                                                                                                                                                                  |
+| --------- | ----------------- | --------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A         | Ctrl              | A               | Command            |                                                                                                                                                                                                                                                                        |
+| B         | Ctrl              | B               | Command            |                                                                                                                                                                                                                                                                        |
+| C         | Left Ctrl         | C               | Command            |                                                                                                                                                                                                                                                                        |
+| C         | Ctrl+Shift        | C               | Command            | Only applies to Terminal Emulators.                                                                                                                                                                                                                                    |
+| F         | Ctrl              | F               | Command            |                                                                                                                                                                                                                                                                        |
+| I         | Ctrl              | I               | Command            |                                                                                                                                                                                                                                                                        |
+| L         | Win               | (Shell Command) |                    | Use only 1 Win+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications.      |
+| L         | Win               | Power           | Control+Shift      | Use only 1 Win+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications.                                                                                                                             |
+| L         | Alt+Ctrl          | (Shell Command) |                    | Use only 1 Alt+Ctrl+L shortcut. Invokes Login Window. Turn on [Fast User Switching](https://support.apple.com/kb/PH25396) first. Executes `/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend`. Works in Excepted Applications. |
+| L         | Alt+Ctrl          | Power           | Control+Shift      | Use only 1 Alt+Ctrl+L shortcut. Invokes Lock Screen. Note that the screen doesn't always fully lock right away. Works in Excepted Applications.                                                                                                                        |
+| N         | Ctrl              | N               | Command            |                                                                                                                                                                                                                                                                        |
+| O         | Ctrl              | O               | Command            |                                                                                                                                                                                                                                                                        |
+| P         | Ctrl              | P               | Command            |                                                                                                                                                                                                                                                                        |
+| R         | Ctrl              | R               | Command            |                                                                                                                                                                                                                                                                        |
+| S         | Ctrl              | S               | Command            |                                                                                                                                                                                                                                                                        |
+| T         | Ctrl              | T               | Command            |                                                                                                                                                                                                                                                                        |
+| U         | Ctrl              | U               | Command            |                                                                                                                                                                                                                                                                        |
+| V         | Ctrl              | V               | Command            |                                                                                                                                                                                                                                                                        |
+| V         | Ctrl+Shift        | V               | Command            | Only applies to Terminal Emulators.                                                                                                                                                                                                                                    |
+| W         | Ctrl              | W               | Command            |                                                                                                                                                                                                                                                                        |
+| X         | Ctrl              | X               | Command            |                                                                                                                                                                                                                                                                        |
+| Y         | Ctrl              | Y               | Command            |                                                                                                                                                                                                                                                                        |
+| Z         | Ctrl              | Z               | Command            |                                                                                                                                                                                                                                                                        |
+| 1         | Command           | (Shell Command) |                    | Launches or switches to Finder (pinned to first position in dock by system).                                                                                                                                                                                           |
+| 2         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the second position in the dock.                                                                                                                                                                                             |
+| 3         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the third position in the dock.                                                                                                                                                                                              |
+| 4         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the fourth position in the dock.                                                                                                                                                                                             |
+| 5         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the fifth position in the dock.                                                                                                                                                                                              |
+| 6         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the sixth position in the dock.                                                                                                                                                                                              |
+| 7         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the seventh position in the dock.                                                                                                                                                                                            |
+| 8         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the eighth position in the dock.                                                                                                                                                                                             |
+| 9         | Command           | (Shell Command) |                    | Launches or switches to the app pinned to the ninth position in the dock.                                                                                                                                                                                              |
 
 ### Punctuation Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| / | Ctrl | / | Command | Works in Terminal Emulators. |
-| Space | Ctrl | Space | Command |  |
+
+| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes                        |
+| --------- | ----------------- | ---------- | ------------------ | ---------------------------- |
+| /         | Ctrl              | /          | Command            | Works in Terminal Emulators. |
+| Space     | Ctrl              | Space      | Command            |                              |
 
 ### Function Keys
-| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes |
-|-|-|-|-|-|
-| F1 |  | / | Command+Shift |  |
-| F3 |  | G | Command |  |
-| F4 | Alt | Q | Command | Works in Terminal Emulators. |
-| F4 | Ctrl | W | Command | Only applies to Google Chrome. |
+
+| Input Key | Input Modifier(s) | Output Key | Output Modifier(s) | Notes                          |
+| --------- | ----------------- | ---------- | ------------------ | ------------------------------ |
+| F1        |                   | /          | Command+Shift      |                                |
+| F3        |                   | G          | Command            |                                |
+| F4        | Alt               | Q          | Command            | Works in Terminal Emulators.   |
+| F4        | Ctrl              | W          | Command            | Only applies to Google Chrome. |
 
 ## Credits
+
 - [@TechnicallyDifficult](https://github.com/TechnicallyDifficult) for coming up with the initial json file
 - [@alvaro1728](https://github.com/alvaro1728) for creating the current json file and for [asking the question](https://github.com/tekezo/Karabiner-Elements/issues/249) that got this whole thing started
 - [@tezeko](https://github.com/tekezo) for Karabiner-Elements
@@ -139,6 +150,7 @@ Generally Excepted Applications:
 - [@raxigan](https://github.com/raxigan) for simplifying JetBrains IDE listing and adding the Win [Spotlight] shortcut
 
 ## Links
+
 - Karabiner-Elements [(Homepage)](https://pqrs.org/osx/karabiner/) [(GitHub)](https://github.com/tekezo/Karabiner-Elements)
 
 ## Contributing
@@ -152,6 +164,7 @@ Pull requests (PRs) and issues are welcome! But first, some notes:
 Again, please refrain from making changes directly to any `*.json` files (all JSON files will be rendered automatically as necessary on a push to the master branch) and instead make your additions in the `*.jsonnet` and `*.libsonnet` files and submit a PR. A comment will automatically be added to the PR showing any JSON changes that will result.
 
 ### Adding Exceptions
+
 When adding exceptions, you will need the applications "bundle identifier". To get this, you can use the following AppleScript ([SuperUser thread](https://superuser.com/q/346369)):
 
 ```applescript
@@ -163,6 +176,7 @@ In the above example, `<application>` is the name of the application, such as `F
 Once you have the bundle identifier, which will be, for example, `com.microsoft.VSCode` for Microsoft VSCode, you will need to add it to the `bundle.libsonnet` file in the appropriate section. Since VSCode is an IDE, we would add it to the `ides: [ ... ],` section. Make sure to add `^` at the beginning, and `$` at the end of the identifier, and to add `\\` before any periods. (Look in the file and follow the pattern.)
 
 ### Testing
+
 For testing, get [Jsonnet](https://jsonnet.org) (I use the [C++ version](https://github.com/google/jsonnet) personally, but a [Go version](https://github.com/google/go-jsonnet) is also available), render the json file locally (`jsonnet -- ./jsonnet/windows_shortcuts.jsonnet >./json/windows_shortcuts.json`) and test it in Karabiner Elements to ensure your changes work how you think they should work.
 
 Once your testing is done, you can simply run `make` to ensure your changes are syntactically valid jsonnet and that they are formatted. If you don't get any errors, then you should be ready to commit your changes and submit a PR.
